@@ -7,7 +7,7 @@ Creamos el directorio de trabajo y nos posicionamos en él.
 ------------------------------------------------------
 mkdir proyecto          # Crea una nueva carpeta llamada 'proyecto'
 cd proyecto             # Entra a la carpeta recién creada
-# git clone https://github.com/AlexaPm20/Banks.git     #Clona tu repositorio aquí si ya está en Git
+# git clone https://github.com/AlexaPm20/Web.git    #Clona tu repositorio aquí si ya está en Git
 
 
 2. CREAR Y ACTIVAR EL ENTORNO VIRTUAL
