@@ -32,7 +32,7 @@ pip install -r requirements.txt # Instala todas las dependencias listadas en el 
 
 4. CONFIGURAR LA CLAVE SECRETA DE DJANGO
 Cada persona debe generar y usar su propia clave. Estos comandos se ejecutan desde la
-carpeta del proyecto que contiene manage.py y .env.example.
+carpeta del proyecto que contiene manage.py y .env.example. esto generara una copia pero con el nombre de .env muy necesaria 
 ------------------------------------------------------
 # Linux / macOS
 cp .env.example .env
@@ -40,14 +40,13 @@ cp .env.example .env
 # Windows PowerShell
 Copy-Item .env.example .env
 
-# Genera una clave nueva usando el entorno virtual activo:
+# Genera una clave nueva usando el entorno virtual activo con el siguiente comando:
 
 python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
 
 # Copia el resultado en .env, después de DJANGO_SECRET_KEY=
 # Ejemplo: DJANGO_SECRET_KEY=pega_aqui_tu_clave_generada
 
-# No compartas tu archivo .env ni subas la clave a GitHub.
 
 
 5. LEVANTAR LOS SERVICIOS CON DOCKER COMPOSE
